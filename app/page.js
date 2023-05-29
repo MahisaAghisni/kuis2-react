@@ -14,11 +14,12 @@ import EmployeeEdit from './pages/employee/Edit';
 import PaymentsEdit from './pages/payments/Edit';
 import ProductsEdit from './pages/products/Edit';
 import UsersEdit from './pages/users/Edit';
+import SideNav from './components/SideNav';
 
 export default function Home() {
   return (
     <BrowserRouter>
-      <Sidebar>
+      <SideNav>
       <Routes>
         <Route path="/" element={<Dashboard/>} />
         <Route path="/employee" element={<EmployeeIndex/>} />
@@ -35,7 +36,7 @@ export default function Home() {
         <Route path="/users/edit/:id" element={<UsersEdit/>} />
 
       </Routes>
-      </Sidebar>
+      </SideNav>
     </BrowserRouter>
   )
 }
