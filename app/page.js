@@ -1,5 +1,4 @@
 'use client';
-import Sidebar from './components/Sidebar';
 import Dashboard from './pages/Dashboard';
 import EmployeeCreate from './pages/employee/Create';
 import EmployeeIndex from './pages/employee/Index';
